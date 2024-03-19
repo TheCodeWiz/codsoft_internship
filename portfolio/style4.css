@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metrophobic&family=Port+Lligat+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Metrophobic", sans-serif;
+    /* background-color: var(--black); */
+}
+/* yeh maine variable banaya jiske karan mein colour ko ek hi baari mein change kr skta hu bar bar change na krna pade */
+:root{
+    --white:#fff;
+    --black:#000;
+    --primary-grey: #4a4a4a;
+    --secondary-grey:#f5f6f8;
+    --primary-yellow:#eaa606;
+    --secondary-yellow:#7f602d;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+/* ---general Styling */
+/* this is used for general things without repeation */
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+li{
+    list-style: none;
+}
+
+h1, h2, h4{
+    color: var(--black);
+}
+
+h1{
+    font-size: 2.6rem;
+    font-family: "Port Lligat Slab", serif;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1.3rem;
+    color: var(--primary-yellow);
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+p{
+    font-size: 1rem;
+    color: var(--primary-grey);
+    margin-top: 1rem;
+    margin-bottom: 2rem ;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    max-width: 80%;
+}
+
+.para{
+    max-width: 100%;
+}
+
+.primary-btn{
+    border: .1rem solid var(--primary-yellow);
+    background: var(--primary-yellow);
+    font-size: 1rem;    
+    border-radius: 5rem;
+    color: var(--white);
+    padding: 0.4rem 1.5rem;
+}
+
+[data-type="inverted-btn"]{
+    background: transparent;
+    color: var(--primary-yellow);
+}
+[data-type="white-btn"]{
+    background: var(--white);
+    border: none;
+    color: var(--primary-yellow);
+}
+
+[data-type="black-btn"]{
+    background: var(--primary-yellow);
+    border: none;
+    color: var(--black);
+    font-weight:bolder;
+}
+
+.primary-btn:hover{
+    filter: drop-shadow(2px 30px 10px rgb(111, 99, 65)) sepia(40%);
+}
+
+.bg-white{
+    background: var(--white);
+}
+
+.bg-black{
+    background: var(--black);
+}
+
+.bg-light-yellow{
+    background: var(--secondary-yellow);
+}
+
+.bg-yellow{
+    background: var(--primary-yellow);
+}
+
+.bg-grey{
+    background: var(--primary-grey);
+}
+
+.fill-white{
+    color: var(--white);
+}
+
+.fill-yellow{
+    color: var(--primary-yellow);
+}
+
+.fill-light-yellow{
+    color: var(--secondary-yellow);
+}
+
+.section{
+    padding: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.row-container, .column-container{
+    display: flex;
+    justify-content: cneter;
+    align-items: center;
+}
+
+.row-container{
+    gap: 7rem;
+}
+
+.column-container{
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+}
+
+.content{
+    max-width: 50%;
+}
+
+img{
+    height: 100%;
+    display: inline-block;
+}
+
+.fa-solid{
+    margin-right: 1rem;
+}
+
+/* ---navbar--- */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 13vh;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.fa-bars{
+    font-size: 2rem;
+}
+
+.hamburger{
+    display: none;
+}
+
+.active,.navlist li .navlinks{
+    color: var(--primary-yellow);
+}
+
+.active,.navlist li .navlinks:hover{
+    color: var(--secondary-yellow);
+}
+
+.logo{
+    font-size: 1.6rem;
+    font-weight: bolder;
+    color: var(--primary-yellow);
+    border: .1rem solid var(--primary-yellow);
+    padding: .3rem;
+}
+
+/* ---hero section--- */
+.p{
+    color: white;
+}
+
+.hero-section{
+    height: calc(100vh - 13vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actions{
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.image-container{
+    height: 75vh;
+    width: 50rem;
+    background:linear-gradient(var(--secondary-yellow),var(--primary-grey));
+    border-radius: 50% 50% 0 0;
+    position: relative;
+}
+
+.image-container img{
+    position: absolute;
+    left: -51%;
+    transform: translateX(0%);
+    bottom: 40px;
+}
+
+/* ---skill section--- */
+.skill-level{
+    background: var(--white);
+    width: 100%;
+    height: .5rem;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 3rem;
+}
+
+.skill-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 6rem;
+    grid-row-gap: 2rem;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-bar{
+    background: var(--primary-yellow);
+    position: absolute;
+    inset: 0;
+    border-radius: 3rem;
+}
+
+.html{
+    width: 80%;
+}
+.bootstrap{
+    width: 70%;
+}
+.css{
+    width: 80%;
+}
+.javascript{
+    width: 80%;
+}
+.java{
+    width: 90%;
+}
+.c{
+    width: 80%;
+}
+
+/* ---about me section--- */
+[data-type ="inverted-img"]{
+    transform: scaleX(-1); /*for fliping the image*/
+}
+
+.detail{
+    margin-bottom: 1.6rem;
+}
+
+.interest{
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+/* ---services section--- */
+
+.grid-card-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 3.5rem;
+    grid-column-gap: 2rem;
+}
+
+.card{
+    background: var(--primary-grey);
+    padding: 1rem 0 0 2rem;
+    text-align: left;
+    border-radius: 0 10%;
+}
+
+.q{
+    color: var(--primary-yellow);
+}
+
+[data-type = "card-icons"]{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--black);
+    padding: 1rem;
+    border-radius: 5rem;
+}
+
+.card:hover{
+    background: rgb(99, 94, 43);
+    cursor: pointer;
+}
+
+.card:hover.card p{
+    color: var(--black);
+}
+
+.r{
+    background: rgb(14, 13, 11);
+}
+
+/* ---portfolio section--- */
+
+.portfolio-card{
+    width: 20rem;
+    height: 12em;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-card:nth-child(1){
+    background-image: url("/picture1.jpg");
+}
+.portfolio-card:nth-child(2){
+    background-image: url("/picture2.jpg");
+}
+.portfolio-card:nth-child(3){
+    background-image: url("/picture3.jpg");
+}
+.portfolio-card:nth-child(4){
+    background-image: url("/picture4.jpg");
+}
+.portfolio-card:nth-child(5){
+    background-image: url("/picture5.jpeg");
+}
+.portfolio-card:nth-child(6){
+    background-image: url("/picture 6.avif");
+}
+
+.portfolio-card::before{
+    content: "";
+    background: var(--black);
+    position: absolute;
+    inset: 0;
+    transition: opacity .3s ease-in-out;
+    opacity: 0;
+}
+
+.portfolio-card:hover::before{
+    opacity: .7;
+}
+
+.demo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -20%;
+    transition: top .3s ease-in-out;
+}
+
+.portfolio-card:hover .demo{
+    top: 50%;
+}
+
+/* ---work together section--- */
+
+.project-section{
+    padding: 2.5rem 0;
+    position: relative;
+}
+
+.project-content{
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+.project-content h2{
+    font-size: 2rem;
+}
+
+.project-section::before, .project-section::after{
+    content: "";
+    height: 50%;
+    width: 8em;
+    background: black;
+    position: absolute;
+}
+
+.project-section::before{
+    top: 0;
+    right: 50px;
+    border-radius: 0 0 50% 50%;
+    background: linear-gradient(var(--secondary-yellow), var(--black));
+}
+
+.project-section::after{
+    bottom: 0;
+    left: 50px;
+    border-radius: 50% 50% 0 0;
+    background: linear-gradient(var(--black), var(--primary-grey));
+}
+
+/* ---contact us section--- */
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 50%;
+}
+
+input, textarea{
+    width: 100%;
+    border: none;
+    border-radius: 2rem;
+    padding: .9rem 1rem;
+    resize: none;
+    background-color: rgb(65, 48, 1);
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus{
+    outline: .1rem solid var(--primary-yellow);
+}
+
+/* ---footer section--- */
+
+.footer-section{
+    padding: 2rem 0;  
+    text-align: center; 
+    font-weight: bolder;
+    ;
+}

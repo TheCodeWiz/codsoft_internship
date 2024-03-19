@@ -1,0 +1,84 @@
+@import url();
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+body{
+    width: 100;
+    height: 100%;
+    display: flex;
+    padding-top: 150px;
+    padding-bottom: 35px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(307deg, transparent 0%, transparent 10%,rgba(190, 190, 190,0.04) 10%, rgba(190, 190, 190,0.04) 64%,transparent 64%, transparent 100%),linear-gradient(118deg, transparent 0%, transparent 11%,rgba(190, 190, 190,0.04) 11%, rgba(190, 190, 190,0.04) 31%,transparent 31%, transparent 100%),linear-gradient(73deg, transparent 0%, transparent 22%,rgba(190, 190, 190,0.04) 22%, rgba(190, 190, 190,0.04) 90%,transparent 90%, transparent 100%),linear-gradient(156deg, transparent 0%, transparent 51%,rgba(190, 190, 190,0.04) 51%, rgba(190, 190, 190,0.04) 97%,transparent 97%, transparent 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+}
+
+.calculator{
+    border: 1px solid #28292a;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: rgb(18,17,17);
+    box-shadow: 0px 3px 15px rgba(145, 145, 145,0.4); /*this is the line that gives shadow effect to the block from backside or glowlike look*/
+}
+
+input{
+    width: 320px; /*for broadness of the calci*/
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    color: white;
+    box-shadow: 0px 3px 15px rgba(255, 255, 255 ,0.1);
+    font-size: 40px;/*size of the text in the input screen*/
+    text-align: right;/*for keeping the zero at the right hand size*/
+    border-radius: 15px;
+    cursor: pointer;
+    /* color: yellow; */
+}
+
+input::placeholder{
+    color: white;
+}
+
+button{
+    background-color: #171717;
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    border-color: #171717;
+    color: white;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px #ffffff1a;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:active{
+    background-color: #28292a ;
+}
+
+.operator{
+    background-color: orange;
+}
+
+.operator1{
+    background-color: grey;
+}
+
+.equalbtn{
+    background-color: orange;
+}
+
+.p{
+    background-color: rgb(18,17,17);
+    color: white;
+    text-align: center;
+    font-size:xx-large;
+}

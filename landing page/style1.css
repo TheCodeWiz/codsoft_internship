@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#first{
+    background: linear-gradient(to right, #FFE53B,#FF2525);
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    font-size: large;
+    font-style: italic;
+    color: cornsilk;
+}
+
+
+#icons img{
+    width: 30px;
+    padding: 5px;
+    mix-blend-mode:inherit;
+    cursor:pointer;
+    object-fit: contain;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.button{
+    background: transparent;
+    border-radius: 20px;
+    border-color: cornsilk;
+    color: cornsilk;
+    font-size: 17px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#request{
+    margin: 10px 0;
+}
+
+#phone{
+    margin: 0 25px;
+    color: cornsilk;
+    cursor: pointer;
+}
+
+.icon{
+    margin: 0 2px;
+}
+
+#second{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background: linear-gradient(to right,grey,black); */
+}
+
+#landingpage{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: 900;
+    font-size: larger;
+}
+
+#second #landingpage img{
+    width: 45px;
+}
+
+#menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-list li{
+    margin: 0 15px;
+    padding: 16px 38px;
+    font-style: italic;
+    font-size: large;
+    list-style: none;
+    cursor: pointer;
+
+}
+
+#menu-list li a{
+    text-decoration: none;
+    color: black;
+}
+
+#landingpage a h3{
+    text-decoration: none;
+    color: black;
+}
+
+#search-icon img{
+    width: 28px;
+    cursor: pointer;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5) url('landingpage.webp');
+    background-size: cover;
+    image-rendering: optimizeQuality;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5) inset;
+}
+
+#content{
+    position:relative;
+    max-width: 72%;
+    content: "";
+    top: 35vh;
+    color: white;
+    margin: 0 auto;
+}
+
+#content h2{
+    font-size: 2.4rem;
+    padding-bottom: 20px;
+}
+
+#content p{
+    font-size: 1rem;
+    padding-bottom: 18px;
+}
+
+.readmore{
+    background: linear-gradient(to right, #FFE53B,#FF2525);
+    border-radius: 20px;
+    color: cornsilk;
+    font-size: 1rem;
+    padding: 9px;
+    cursor: pointer;
+}
+
+.request-consult{
+    background: linear-gradient(to right, #FFE53B,#FF2525);
+    border-radius: 20px;
+    color: cornsilk;
+    font-size: 1rem;
+    padding: 9px;
+    cursor: pointer;
+}
+
+#content::before{
+    content: "";
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(to right, #FFE53B,#FF2525);
+    position: absolute;
+    left: -18px;
+}
+
+#management{
+    background: linear-gradient(to right, #FFE53B,#FF2525);
+    display: block;
+    padding: 30px;
+    margin: 0px;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 33px;
+    justify-content: space-evenly;
+}
+
+#management #container .item .sub-item img{
+    width: 55px;
+    mix-blend-mode: darken;
+    cursor: pointer;
+    padding: 18px;
+}
+
+.item{
+    width: 25%;
+    color: black ;
+}
+
+.sub-item{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.item .sub-item span{
+    font-size:1.2rem;
+}
+
+#management #container .item .para{
+    font-size: 1.2rem;
+}
+
+#aboutus{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+#about{
+    width: 100vw;
+    padding: 90px;
+}
+
+#man-think img{
+    mix-blend-mode: darken;
+    width: 40vw;
+    border: none;
+    padding-top: 90PX;
+}
+
+.h2{
+    font-size: 1.8rem;
+    margin: 33px 0px;
+    position: relative;
+}
+
+.h2::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 728px;
+    top: 40px;
+    background: linear-gradient(to right, #FFE53B,#FF2525);   
+}
+
+.h4{
+    font-size:1.2rem;
+    margin-bottom: 15px;
+}
+
+#about .h4{
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#about #paragraph{
+    line-height: 25px;
+    margin-bottom: 1.5rem;
+}
+
+#services{
+    background-color: whitesmoke;
+    padding: 80px;
+}
+
+.service{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 5rem;
+}
+
+.service img{
+    width: 20rem;
+    aspect-ratio: 3/2;
+    margin-bottom: 1.6rem;
+    border-radius: 25px;
+}
